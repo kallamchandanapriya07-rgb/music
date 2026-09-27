@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.music-player {
+    width: 350px;
+    padding: 25px;
+
+    background: white;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.music-player h1 {
+    margin-bottom: 20px;
+}
+
+.album {
+    width: 150px;
+    height: 150px;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 70px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    border-radius: 50%;
+}
+
+.music-player h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.music-player p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+    color: #555;
+}
+
+#progress {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #333;
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+    background: #667eea;
+}
+
+#play {
+    width: 65px;
+    height: 65px;
+
+    background: #667eea;
+}
+
+.volume {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#volume {
+    width: 120px;
+}
+
+h3 {
+    margin: 15px 0 10px;
+}
+
+#playlist {
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.song {
+    padding: 10px;
+
+    margin: 5px 0;
+
+    background: #f1f1f1;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.song:hover {
+    background: #ddd;
+}
+
+.song.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 400px) {
+
+    .music-player {
+        width: 90%;
+    }
+
+}
